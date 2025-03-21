@@ -4,13 +4,17 @@ public class Ball : MonoBehaviour
 {
         public GameObject Title;
         public AudioSource Exploded;
+        public AudioSource Xiu;
 
     void BallAnimEnd()
     {
         Title.SetActive(true);
         gameObject.SetActive(false);
     }
-
+    void BallFly()
+    {
+        Xiu.Play();
+    }
     void BallExploded()
     {
         Exploded.Play();
