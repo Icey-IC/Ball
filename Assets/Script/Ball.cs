@@ -4,13 +4,14 @@ using UnityEngine.SceneManagement;
 public class Ball : MonoBehaviour
 {
         public GameObject Title;
+        public GameObject Canvas;
         public AudioSource Exploded;
         public AudioSource Xiu;
 
     void BallAnimEnd()
     {
+        Title.transform.localScale = new Vector3(10,10,10);
         Title.SetActive(true);
-        gameObject.SetActive(false);
     }
     void BallFly()
     {
@@ -23,7 +24,7 @@ public class Ball : MonoBehaviour
 
     void Transition()
     {
-        Title.SetActive(false);
+        Canvas.SetActive(false);
     }
 
     void NextScene()
