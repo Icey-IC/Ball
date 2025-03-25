@@ -56,6 +56,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Ball.sln",
+    "dotnet.defaultSolution": "Ball-1.sln",
     "git.ignoreLimitWarning": true
 }
